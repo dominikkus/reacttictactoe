@@ -1,2 +1,2 @@
 # reacttictactoe
-React Tic Tac Toe
+ Tic Tac Toe done in react
