@@ -132,10 +132,8 @@ const TicTacToe = () => {
             
         
             if (cells[num] !== ''){
-                const nameConcat = "id_" + num;
-                //console.log(nameConcat);
+                const nameConcat = "id_" + num;     
                 highlightSwitch(num);
-                //return <td className = {highlightIllegalMove ? nameConcat : "highlighted"}></td>;
                 return
             }
 
@@ -164,7 +162,6 @@ const TicTacToe = () => {
     
     
     const Cell = ({ num, class_name }) => {
-        //return <td onClick={() => {handleClick(num); PlayerNameSwitch(); PlayerNameSwitch_red();}} style={{ color: cells[num] === "x" ? "blue" : "red"}}>{cells[num]}</td>
         return <td className= {cellsHighlighted[num] ? "highlighted" : "non-highlighted"} onClick={() => {handleClick(num);}} style={{ color: cells[num] === "x" ? "blue" : "red"}}>{cells[num]}</td>
     }
 
