@@ -10,17 +10,10 @@ import React, { Component, useState }  from 'react';
 function App() {
   const [secondGame, setsecondGame] = useState(false);
 
-
-
-
-
   const HandleClick = () => {
     setsecondGame(!secondGame);
-   // if (this.value === "Toggle Second Game") this.value = "Toggle Single Game";
-   // else this.value = "Toggle Second Game";
   }
-
-
+  
   return (
     <><h1>
       Tic Tac Toe
